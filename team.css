@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+#team-bg-1 {
+    background-image: url(img/2PIAI_PAGE01_BG.png);
+
+
+
+    max-width: 1920px;
+    width: 100%;
+    height: 50vh;
+
+    overflow: hidden
+}
+
+
+
+#team-img1 {
+    position: absolute;
+    bottom: 50%;
+
+}
+#project-img1 {
+    position: absolute;
+    bottom: 50%;
+
+}
+#contact-img1 {
+    position: absolute;
+    top: 140px;
+
+}
+
+#team-img2 {
+    position: relative;
+    top: 116px;
+    left: 1000px;
+
+}
+#team-card img{
+    width: 226px;
+    height: 283;
+    background-color: #222222;
+}
+#teams{
+    padding: 50px 50px 93px 50px;
+    z-index: 999;
+}
+#teams-text p{
+    font-size:20px ;
+    font-weight: 600;
+}
+#teams-text h2{
+    font-size:35px ;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+#project-bg-2{
+    background-image: url(https://www.2pi.ai/assets/images/shape/COMMUMICATION_WAVE.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    /* max-width: 1920px; */
+    width: 60%;
+    height: 50%;
+    right: 0px;
+
+
+}
+#project-p p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+}
+#project-p{
+    padding: 1px 150px 2px 2px;
+    /* background-color: aquamarine; */
+    color: white;
+
+}
+#project-p button{
+    padding: 20px 55px;
+    background-image: linear-gradient(90deg, rgba(205, 208, 245, 1) 0%, rgba(141, 4, 223, 1) 23%, rgba(101, 60, 177, 1) 100%);
+    border-radius: 10px;
+    color: #ffffff;
+    border: 0px;
+}
+#project-img img{
+    width: 370px;
+    height: 460px;
+}
+#project-bg1{
+    background-image: url(img/shape-15.png);
+    background-size: cover;
+    /* padding: 1px 1px 1px 1px; */
+    border-radius: 5px;
+}
+#project-bg2{
+    background-color: #efc050;
+    border-radius: 5px;
+}
+#project-bg2 #project-p h1{
+    color: #333;
+}
+#project-bg2 #project-p p{
+    color: #666666;
+}
+
+
+#project-img1{
+    /* position: relative; */
+    
+    animation: proj ease-in;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes proj{
+    0%{left: 0%;}   
+    50%{left:8% ;}
+    100%{left: 0%;}
+    
+}
+
+/* #info-column{
+    background-color: #474866;
+    
+} */
+#info-column{
+    color: #ffffff;
+}
+#info-box{
+    padding: 35px 30px 30px 40px;
+    opacity: 1;
+}
+/* #contact-icon{
+    color:90deg, rgba(205, 208, 245, 1) 0%, rgba(141, 4, 223, 1) 23%, rgba(101, 60, 177, 1) 100%;
+  
+   
+}  */
+#icon-box{
+    font-size: 45px;
+    line-height: 0px;
+    color: transparent !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: linear-gradient(90deg, rgba(205,208,245,1) 0%, rgba(141,4,223,1) 23%, rgba(101,60,177,1) 100%);
+}
+#icon-content{
+    position: relative;
+    left: 20px;
+}
+#icon-text,#icon-text a{
+    color: rgba(255, 255, 255, 0.6);
+}
+#icon-text{
+    margin-top: 30px;
+    line-height: 10px;
+}
+#icon-row{
+    background-color: #474866;
+    border-radius: 15px;
+}
+
+
+
+#contact-img1{
+    /* position: relative; */
+    
+    animation: project ease-in-out;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-delay: .1s;
+    transition-property: all;
+}
+
+@keyframes project{
+    0%{left: 0%;}   
+    50%{left:8% ;}
+    100%{left: 0%;}
+    
+}
+#contact-box{
+   display: flex;
+}
+#contact-box .icon-box i{
+    font-size: 50px;
+}
+#info-column.info-columns{
+    border-right: 1px white solid;
+}
+
+
+
+
+
+
+@media (max-width: 1240px) {
+    #team-img2{
+        display: none;
+    }
+}
+@media (max-width: 980px) {
+    #project-p {
+        padding: 1px 0px 2px 32px;
+    }
+}
+@media (max-width: 780px) {
+    #project-bg-2{
+        background-image: url(https://www.2pi.ai/assets/images/shape/COMMUMICATION_WAVE.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        /* max-width: 1920px; */
+        width: 100%;
+        height: 50%;
+        right: 0px;
+    
+    
+    }
+    #project-img img {
+        width: 100%;
+        height: 100%;
+    }
+    #project-p {
+        padding: 1px 0px 2px 32px;
+    }
+    #project-p p{
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 500;
+    }
+    #contact-img1{
+       width: 400px;
+        
+       animation: none;
+    }
+    #project-img1{
+        animation: none;
+    }
+    
+    #info-column.info-columns{
+        border-bottom: 1px white solid;
+    }
+    iframe{
+        height: 300px;
+    }
+
+}
+@media (max-width: 500px) {
+    #team-bg-2{
+        background-image: url(img/TEAM_TOGEATHER.png);
+        width: 400px;
+        height: 100%;
+        background-repeat: no-repeat;
+
+    }
+    #teams-text p{
+        font-size:15px ;
+        font-weight: 600;
+    }
+    #project-bg-2{
+        background-image: url(https://www.2pi.ai/assets/images/shape/COMMUMICATION_WAVE.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        /* max-width: 1920px; */
+        width: 70%;
+        height: 50%;
+        right: 0px;
+    
+    
+    }
+    #project-p {
+        padding: 1px 12px 2px 12px;
+    }
+    #project-p p{
+        font-size: 12px;
+        line-height: 26px;
+        font-weight: 500;
+    }
+}
